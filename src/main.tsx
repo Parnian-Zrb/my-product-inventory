@@ -6,8 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AddProduct from "./Pages/AddProduct.tsx";
 import EditProduct from "./Pages/EditProduct.tsx";
 import Home from "./Pages/Home.tsx";
-import Navbar from "./components/Navbar.tsx";
 import { Layout } from "./components/Layout.tsx";
+import Favorites from "./Pages/Favorites.tsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/EditProduct",
         element: <EditProduct />,
+      },
+      {
+        path: "/Favorites",
+        element: <Favorites />,
       },
     ],
   },
