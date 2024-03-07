@@ -1,12 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.tsx";
+import "./index.css";
 
-import add
+import AddProduct from "./Pages/AddProduct.tsx";
+import createBrowserRouter from "./Pages/createBrowserRouter.tsx";
+import EditProduct from "./Pages/EditProduct.tsx";
+import Home from "./Pages/Home.tsx";
+import RouterProvider from "./Pages/RouterProvider.tsx";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
