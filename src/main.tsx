@@ -7,11 +7,12 @@ import AddProduct from "./Pages/AddProduct.tsx";
 import EditProduct from "./Pages/EditProduct.tsx";
 import Home from "./Pages/Home.tsx";
 import Navbar from "./components/Navbar.tsx";
+import { Layout } from "./components/Layout.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Navbar />,
+    element: <Layout />,
 
     children: [
       {
