@@ -1,13 +1,38 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import AddProduct from "./Pages/AddProduct.tsx";
-import createBrowserRouter from "./Pages/createBrowserRouter.tsx";
 import EditProduct from "./Pages/EditProduct.tsx";
 import Home from "./Pages/Home.tsx";
-import RouterProvider from "./Pages/RouterProvider.tsx";
+import Navbar from "./components/Navbar.tsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Navbar />,
+
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/addProduct",
+        element: <AddProduct />,
+      },
+
+      {
+        path: "/EditProduct",
+        element: <EditProduct />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode></React.StrictMode>
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
