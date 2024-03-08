@@ -8,6 +8,7 @@ import AddProduct from "./Pages/AddProduct.tsx";
 import { Layout } from "./components/Layout.tsx";
 import Favorites from "./Pages/Favorites.tsx";
 import ProductDetails from "./Pages/ProductDetails.tsx";
+// import Navbar from "./components/Navbar.tsx";
 
 const router = createBrowserRouter([
   {
