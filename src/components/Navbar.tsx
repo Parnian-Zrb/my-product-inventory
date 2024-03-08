@@ -1,11 +1,20 @@
 import { Link } from "react-router-dom";
+import "../components/Navbar.css";
+import React, { useState } from "react";
+
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
+    <nav>
+      <Link to="/" className="title">
+        Home
+      </Link>
+      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={menuOpen ? "open" : ""}>
         <li>
           <Link to="/AddProduct">Add Product</Link>
         </li>
@@ -13,7 +22,7 @@ const Navbar = () => {
           <Link to="/ProductDetails">Product Details</Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
