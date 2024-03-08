@@ -1,10 +1,9 @@
-import Navbar from "../components/Navbar";
-import Header from "../components/Header";
-
+import ProfileCard from "../components/ProductCard";
 const Home = () => {
   return (
     <div>
-      <Header />
+      <ProfileCard />
+      <ProfileCard />
     </div>
   );
 };
