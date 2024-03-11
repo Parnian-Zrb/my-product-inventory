@@ -1,10 +1,11 @@
 import ProductCard from "../components/ProductCard";
 import products from "../data/products.json";
+import "./Home.css";
 
 const Home = () => {
   const productsArray = products.products.data.items;
   return (
-    <div>
+    <div className="productContainer">
       {productsArray.map((product) => (
         <ProductCard
           name={product.name}
