@@ -16,6 +16,7 @@ interface Values {
   productName: string;
   price: string;
   description: string;
+  quantity: string;
 }
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
           productName: "",
           price: "",
           description: "",
+          quantity: "",
         }}
         onSubmit={(
           values: Values,
@@ -48,11 +50,14 @@ const App = () => {
 
           <label htmlFor="price">Price</label>
           <Field id="price" name="price" placeholder="Price" />
+          <label htmlFor="quantity">Quantity</label>
+          <Field id="quantity" name="quantity" placeholder="Quantity" />
 
           <label htmlFor="description">Description</label>
           <Field
             id="description"
             name="description"
+            quantity="quantity"
             placeholder="Prduct Description"
             as={TextareaAutosize}
           />
