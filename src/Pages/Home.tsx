@@ -8,11 +8,11 @@ const Home = () => {
     <div className="productContainer">
       {productsArray.map((product) => (
         <ProductCard
+          image={product.image}
           name={product.name}
           description={product.description}
           price={product.price}
           rating={4.5}
-          image={""}
         />
       ))}
     </div>

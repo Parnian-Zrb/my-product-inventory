@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 interface ProductCardProps {
-  image: string;
+  image?: string;
   name: string;
   description: string;
   price: string;
