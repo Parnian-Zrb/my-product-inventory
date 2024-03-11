@@ -1,0 +1,74 @@
+{
+    "products": {
+      "data": {
+        "items": [
+          {
+            "id": "GGOEGDHC098799",
+            "name": "Google 16 oz Tumbler Blue",
+            "description": "A geometric inner liner gives this Google 16oz Tumbler a unique look to help you stand out in a crowd of bottles and tumbler.",
+            "features": "<p>16 oz. Double wall acrylic tumbler</p>\n<p>Clear outer wall</p>\n<p>Push-on dual-purpose swivel lid</p>\n<p>Matching soft straw</p>",
+            "price": "12.99",
+            "keywords": "Google 16 oz Tumbler Blue, tumbler",
+            "url": "Google+16oz+Tumbler+Blue",
+            "category": "drinkware",
+            "subcategory": "drinkware"
+          },
+          {
+            "id": "GGOEGHBL101999",
+            "name": "Google Twill Sandwich Cap Navy",
+            "description": "This Google Twill Sandwich Cap will not only keep the sun out of your eyes but will also keep you looking stylish.",
+            "features": "<p>Low profile</p>\n<p>Color sandwich bill</p>\n<p>Adjustable velcro closure</p>\n<p>One size fits most</p>",
+            "price": "12.99",
+            "keywords": "Google Twill Sandwich Cap Navy, cap",
+            "url": "Google+Twill+Sandwich+Cap+Navy",
+            "category": "apparel",
+            "subcategory": "apparel"
+          },
+          {
+            "id": "GGOEYDHB098499",
+            "name": "YouTube 25 oz Gear Cap Bottle Black",
+            "description": "Take your favorite hot or cold drink anywhere with this YouTube 25oz Gear Cap Bottle. The carrying handle lid makes it convenient to take with you to your next meeting or workout.",
+            "features": "<p>25 oz. Powder coated</p>\n<p>Stainless Steel</p>\n<p>Copper vacuum insulation</p>\n<p>Threaded gear-shaped insulated lid</p>\n<p>Carrying handle</p>",
+            "price": "26.99",
+            "keywords": "YouTube 25 oz Gear Cap Bottle Black, bottle",
+            "url": "YouTube+25oz+Gear+Cap+Bottle+Black",
+            "category": "drinkware",
+            "subcategory": "drinkware"
+          },
+          {
+            "id": "GGOEYHBB102199",
+            "name": "YouTube Twill Sandwich Cap Black",
+            "description": "This YouTube Twill Sandwich Cap will not only keep the sun out of your eyes but will also keep you looking stylish.",
+            "features": "<p>Low profile</p>\n<p>Color sandwich bill</p>\n<p>Adjustable velcro closure</p>\n<p>One size fits most</p>",
+            "price": "12.99",
+            "keywords": "YouTube Twill Sandwich Cap Black, cap",
+            "url": "YouTube+Twill+Sandwich+Cap+Black",
+            "category": "apparel",
+            "subcategory": "apparel"
+          },
+          {
+            "id": "GGOEYXXX0938",
+            "name": "YouTube Icon Pullover Black",
+            "description": "This YouTube pullover hoodie will keep you warm while looking stylish with the tone on tone logo.",
+            "features": "<p>8oz. 52% Cotton. 48% Polyester. Fleece</p>\n<p>Kangaroo pocket</p>\n<p>Matching drawcords</p>\n<p>",
+            "price": "59.99",
+            "keywords": "YouTube Icon Pullover Black, pullover, hoodie",
+            "url": "YouTube+Icon+Pullover+Black",
+            "category": "apparel",
+            "subcategory": "apparel"
+          },
+          {
+            "id": "GGOEYXXX0937",
+            "name": "YouTube Wordmark Crew Grey",
+            "description": "Kick back and relax in this comfortable YouTube sweatshirt. Unisex sizing.",
+            "features": "<p>Unisex sizing</p>\n<p>Raglan sleeves</p>\n<p>1x1 ribbed cuffs and waistband inch</p>",
+            "price": "51.99",
+            "keywords": "YouTube Wordmark Crew Grey, YouTube, sweatshirt",
+            "url": "YouTube+Wordmark+Crew+Grey",
+            "category": "apparel",
+            "subcategory": "apparel"
+          }
+        ]
+    }
+    }
+    }
