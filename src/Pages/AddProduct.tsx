@@ -1,5 +1,10 @@
+import ProductForm from "./ProductForm.tsx";
 const AddProduct = () => {
-  return <div>AddProduct</div>;
+  return (
+    <div>
+      <ProductForm />
+    </div>
+  );
 };
 
 export default AddProduct;
