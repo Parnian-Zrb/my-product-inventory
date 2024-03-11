@@ -1,317 +1,62 @@
-[
-    {
-      "_id": "65ef048247b84301f068204e",
-      "index": 0,
-      "guid": "5afd5fea-963a-4aa4-a628-80a28d5596d5",
-      "isActive": false,
-      "balance": "$3,706.75",
-      "picture": "http://placehold.it/32x32",
-      "age": 36,
-      "eyeColor": "blue",
-      "name": "Sally Frank",
-      "gender": "female",
-      "company": "DEMINIMUM",
-      "email": "sallyfrank@deminimum.com",
-      "phone": "+1 (869) 507-3584",
-      "address": "358 Dunne Court, Mahtowa, Nevada, 4390",
-      "about": "Voluptate tempor dolor irure nostrud. In et esse ut Lorem. Deserunt et minim magna ipsum enim. Aliquip qui et occaecat amet excepteur anim nisi. Ut ut excepteur ut reprehenderit tempor ea officia consectetur.\r\n",
-      "registered": "2016-10-16T07:14:55 +04:00",
-      "latitude": 50.880189,
-      "longitude": -44.271086,
-      "tags": [
-        "consequat",
-        "laborum",
-        "id",
-        "enim",
-        "labore",
-        "laboris",
-        "elit"
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Mack Finch"
+{
+    "products": {
+      "data": {
+        "items": [{
+          "id": "GGOEAFKA087499",
+          "name": "Android Small Removable Sticker Sheet",
+          "description": "Show your Android pride by placing these 8 fun stickers on your technology products or accessories!",
+          "features": "<p>8 Android stickers</p>\n<p>White colored sticker sheet</p>",
+          "price": "2.99",
+          "keywords": "Android Small Removable Sticker Sheet, android stickers, sticker sheets, removable sticker sheets, small sticker sheet, android small sticker sheets, Android Sheet",
+          "url": "Android+Small+Removable+Sticker+Sheet",
+          "category": "accessories",
+          "subcategory": "accessories"
         },
         {
-          "id": 1,
-          "name": "Elisabeth Hayes"
+          "id": "GGOEAFKA087599",
+          "name": "Android Large Removable Sticker Sheet",
+          "description": "Show your quirky side by placing these fun Android stickers on your personal belongings.",
+          "features": "<p>Android Stickers</p>\n<p>White Colored Sticker Sheet</p>",
+          "price": "2.99",
+          "keywords": "Android Large Removable Sticker Sheet, android stickers, sticker sheets, removable sticker sheets, large sticker sheet, android large sticker sheets, Android Sheet",
+          "url": "Android+Large+Removable+Sticker+Sheet",
+          "category": "accessories",
+          "subcategory": "accessories"
         },
         {
-          "id": 2,
-          "name": "Turner David"
+          "id": "GGOEGEBK094499",
+          "name": "Google Bot",
+          "description": "This Google Bot can hold multiple poses making it a fun toy for all. Fold the Google Bot back up into a perfect cube when you are done playing.",
+          "features": "<p>Made of wood</p>\n<p>2.5 x 2.5 inch cube</p>\n<p>6.75 inch tall</p>\n<p>Recommended for Ages 3+</p>",
+          "price": "9.99",
+          "keywords": "Google Bot, google bot, bots, natural bots, wood bot, google wood bot",
+          "url": "Google+Bot",
+          "category": "accessories",
+          "subcategory": "accessories"
+        },
+        {
+          "id": "GGOEGFKA086699",
+          "name": "Google Emoji Sticker Pack",
+          "description": "Who doesn't use emojis? Decorate your space with your current mood!",
+          "features": "<p>Pack contains two sticker sheets</p>\n<p>Each Sheet has different emojis</p>\n<p><span>Decal dimensions should fit in a maximum sheet size of 12 3/4 x 17 1/2 inch.</span></p>",
+          "price": "4.99",
+          "keywords": "Google Emoji Sticker Pack, Google sticker pack, emoji sticker pack, google emoji, stickers, pack of sticker, pack of emoji stickers",
+          "url": "Google+Emoji+Sticker+Pack+2+sheet",
+          "category": "accessories",
+          "subcategory": "accessories"
+        },
+        {
+          "id": "GGOEWCKQ085457",
+          "name": "Waze Pack of 9 Decal Set",
+          "description": "Can't decide which Waze decal to get? We have made that decision easier for you! Now you can purchase a pack of nine Waze Mood Decals!",
+          "features": "<p>Pack of 9 includes:</p>\n<p>3 Waze Mood Happy decals</p>\n<p>3 Waze Mood Original decals</p>\n<p>3 Waze Mood Ninja decals</p>",
+          "price": "16.99",
+          "keywords": "Waze Pack of 9 Decal Set, decals pack, packs of 9, Waze Packs, Waze Decals, waze, Waze",
+          "url": "Waze+Pack+of+9+decal+set",
+          "category": "accessories",
+          "subcategory": "accessories"
         }
-      ],
-      "greeting": "Hello, Sally Frank! You have 9 unread messages.",
-      "favoriteFruit": "strawberry"
-    },
-    {
-      "_id": "65ef0482ddeeba20ab026524",
-      "index": 1,
-      "guid": "8871a241-a268-498f-9a68-bb20a313c6ed",
-      "isActive": false,
-      "balance": "$2,461.18",
-      "picture": "http://placehold.it/32x32",
-      "age": 30,
-      "eyeColor": "blue",
-      "name": "Simone Pate",
-      "gender": "female",
-      "company": "ACIUM",
-      "email": "simonepate@acium.com",
-      "phone": "+1 (856) 510-2043",
-      "address": "369 Cornelia Street, Darbydale, Vermont, 4047",
-      "about": "Exercitation eu qui cupidatat sunt anim aliqua et magna aute ullamco. Est aliqua cupidatat commodo do cupidatat cillum incididunt laboris nulla fugiat ut. Cupidatat laboris amet dolor ea et esse officia qui nisi aliquip laboris.\r\n",
-      "registered": "2015-04-02T07:20:33 +04:00",
-      "latitude": -1.132366,
-      "longitude": -117.434352,
-      "tags": [
-        "non",
-        "exercitation",
-        "eiusmod",
-        "labore",
-        "nisi",
-        "ipsum",
-        "magna"
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Hurst Cohen"
-        },
-        {
-          "id": 1,
-          "name": "Antonia Mcdonald"
-        },
-        {
-          "id": 2,
-          "name": "Browning Fowler"
-        }
-      ],
-      "greeting": "Hello, Simone Pate! You have 4 unread messages.",
-      "favoriteFruit": "apple"
-    },
-    {
-      "_id": "65ef048276a8fff12873e5f6",
-      "index": 2,
-      "guid": "81daeb22-31c2-4221-8070-e11270e56361",
-      "isActive": true,
-      "balance": "$2,530.87",
-      "picture": "http://placehold.it/32x32",
-      "age": 29,
-      "eyeColor": "brown",
-      "name": "Edna Rose",
-      "gender": "female",
-      "company": "KINETICA",
-      "email": "ednarose@kinetica.com",
-      "phone": "+1 (993) 487-2489",
-      "address": "648 Atkins Avenue, Kanauga, West Virginia, 8036",
-      "about": "Nulla proident sint ex magna excepteur ipsum proident Lorem Lorem consectetur eu mollit. Eiusmod fugiat consectetur nisi est ut fugiat aliqua ex non culpa consequat amet veniam commodo. Quis ut minim cupidatat occaecat sunt excepteur aliqua non nulla.\r\n",
-      "registered": "2017-03-24T12:17:44 +04:00",
-      "latitude": 86.018467,
-      "longitude": -83.950228,
-      "tags": [
-        "aute",
-        "veniam",
-        "fugiat",
-        "ullamco",
-        "Lorem",
-        "sunt",
-        "ea"
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "England Pollard"
-        },
-        {
-          "id": 1,
-          "name": "Franks Bryan"
-        },
-        {
-          "id": 2,
-          "name": "Bonner Larson"
-        }
-      ],
-      "greeting": "Hello, Edna Rose! You have 6 unread messages.",
-      "favoriteFruit": "apple"
-    },
-    {
-      "_id": "65ef0482d3a03ef893aa81db",
-      "index": 3,
-      "guid": "961218a9-3194-4855-a7fd-74b491575740",
-      "isActive": true,
-      "balance": "$2,633.56",
-      "picture": "http://placehold.it/32x32",
-      "age": 30,
-      "eyeColor": "green",
-      "name": "Joyce Henry",
-      "gender": "female",
-      "company": "OVATION",
-      "email": "joycehenry@ovation.com",
-      "phone": "+1 (878) 544-3522",
-      "address": "614 Lamont Court, Interlochen, Utah, 6021",
-      "about": "Excepteur aliquip adipisicing ullamco veniam deserunt labore amet non dolor esse. Velit enim reprehenderit pariatur nostrud minim. Eu ea labore commodo velit ut culpa ad labore commodo aliquip. Quis enim dolore irure amet id mollit commodo magna do velit aliquip. Consectetur qui ut est sunt tempor proident aliqua adipisicing cillum incididunt in cillum in. Do irure amet ex esse mollit ex tempor dolore sunt.\r\n",
-      "registered": "2014-07-23T08:55:59 +04:00",
-      "latitude": -0.648846,
-      "longitude": 71.893491,
-      "tags": [
-        "mollit",
-        "ut",
-        "aute",
-        "esse",
-        "eiusmod",
-        "et",
-        "sunt"
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Dunn Mcmahon"
-        },
-        {
-          "id": 1,
-          "name": "Gay Alvarado"
-        },
-        {
-          "id": 2,
-          "name": "Sutton Blevins"
-        }
-      ],
-      "greeting": "Hello, Joyce Henry! You have 5 unread messages.",
-      "favoriteFruit": "apple"
-    },
-    {
-      "_id": "65ef0482cb36e6715b9542a6",
-      "index": 4,
-      "guid": "ca6f8699-261a-4645-ad1c-56b762fd93b3",
-      "isActive": false,
-      "balance": "$3,084.59",
-      "picture": "http://placehold.it/32x32",
-      "age": 28,
-      "eyeColor": "brown",
-      "name": "Tonia Aguirre",
-      "gender": "female",
-      "company": "CENTREXIN",
-      "email": "toniaaguirre@centrexin.com",
-      "phone": "+1 (923) 519-2421",
-      "address": "104 Emmons Avenue, Guilford, Michigan, 2186",
-      "about": "Commodo fugiat adipisicing ullamco in quis cupidatat aliqua. Reprehenderit Lorem deserunt do dolor velit Lorem Lorem in culpa ullamco esse. Proident aute fugiat veniam irure sint voluptate cillum excepteur consequat dolore ut eiusmod. Officia aute anim culpa cillum esse qui. Amet nostrud ipsum sint deserunt nisi Lorem magna excepteur consequat. Dolore eu dolore est laborum anim quis deserunt deserunt sunt magna aliquip eu. Sint excepteur reprehenderit incididunt esse tempor et mollit qui aliquip veniam quis id velit consequat.\r\n",
-      "registered": "2023-05-25T03:52:13 +04:00",
-      "latitude": -6.513891,
-      "longitude": 103.637824,
-      "tags": [
-        "aliquip",
-        "deserunt",
-        "Lorem",
-        "irure",
-        "consequat",
-        "laboris",
-        "esse"
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Berta Dillon"
-        },
-        {
-          "id": 1,
-          "name": "Geraldine Wiley"
-        },
-        {
-          "id": 2,
-          "name": "Reyes Craig"
-        }
-      ],
-      "greeting": "Hello, Tonia Aguirre! You have 4 unread messages.",
-      "favoriteFruit": "apple"
-    },
-    {
-      "_id": "65ef048231b7ab99c8a9bdb1",
-      "index": 5,
-      "guid": "1f8dc3f3-1a85-40c8-af82-4feb3db29555",
-      "isActive": false,
-      "balance": "$1,579.54",
-      "picture": "http://placehold.it/32x32",
-      "age": 23,
-      "eyeColor": "blue",
-      "name": "Bates Mitchell",
-      "gender": "male",
-      "company": "EVENTAGE",
-      "email": "batesmitchell@eventage.com",
-      "phone": "+1 (857) 424-2887",
-      "address": "381 Woodhull Street, Garberville, Alabama, 703",
-      "about": "In id deserunt cupidatat minim dolore. In non commodo magna reprehenderit id deserunt. Anim occaecat exercitation nulla incididunt commodo veniam labore deserunt aliquip esse sint ex ut. Deserunt aute enim cillum aliquip laborum consequat Lorem ex aute sint. Nisi consectetur enim elit velit dolor eu aliquip.\r\n",
-      "registered": "2015-04-11T04:13:44 +04:00",
-      "latitude": 72.418955,
-      "longitude": 113.713739,
-      "tags": [
-        "id",
-        "mollit",
-        "commodo",
-        "ullamco",
-        "dolore",
-        "labore",
-        "voluptate"
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Haney Keith"
-        },
-        {
-          "id": 1,
-          "name": "Garrison Mcfadden"
-        },
-        {
-          "id": 2,
-          "name": "Terrie Hatfield"
-        }
-      ],
-      "greeting": "Hello, Bates Mitchell! You have 2 unread messages.",
-      "favoriteFruit": "banana"
-    },
-    {
-      "_id": "65ef0482515cfd827eb25b17",
-      "index": 6,
-      "guid": "721cf2c2-63f2-44cf-8a0f-5e3fa35ea328",
-      "isActive": false,
-      "balance": "$1,198.85",
-      "picture": "http://placehold.it/32x32",
-      "age": 36,
-      "eyeColor": "green",
-      "name": "Middleton Cummings",
-      "gender": "male",
-      "company": "SUNCLIPSE",
-      "email": "middletoncummings@sunclipse.com",
-      "phone": "+1 (984) 506-2595",
-      "address": "354 Kiely Place, Ballico, Wisconsin, 4486",
-      "about": "Veniam nostrud irure et dolore id sint proident nulla velit officia esse aliquip enim fugiat. Cillum mollit dolore ad mollit officia occaecat irure id nostrud ea esse. Velit sit dolor aliqua et Lorem id duis labore nostrud irure mollit dolor id eu. Adipisicing consequat laboris et cupidatat irure amet aliqua in.\r\n",
-      "registered": "2023-07-02T05:47:19 +04:00",
-      "latitude": 63.856074,
-      "longitude": 156.864976,
-      "tags": [
-        "ut",
-        "esse",
-        "mollit",
-        "aute",
-        "adipisicing",
-        "amet",
-        "laborum"
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Kara Callahan"
-        },
-        {
-          "id": 1,
-          "name": "Nola Mendez"
-        },
-        {
-          "id": 2,
-          "name": "Joy Hartman"
-        }
-      ],
-      "greeting": "Hello, Middleton Cummings! You have 6 unread messages.",
-      "favoriteFruit": "banana"
+    ]
     }
-  ]
+}
+}
