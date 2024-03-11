@@ -1,6 +1,7 @@
 import { Form, Container, Button } from "react-bootstrap";
-import { useFormik } from "formik";
+import { Formik, useFormik } from "formik";
 import * as Yup from "yup";
+import ReactDOM from "react-dom";
 
 // export default AddProduct;
 function AddProduct() {
@@ -18,11 +19,8 @@ function AddProduct() {
           "Name must be letters, dashes, numbers, or spaces"
         )
         .required("Required"),
-      price: Yup.string().min(1, "Must be more than 1$"),
-      quantity: Yup.number()
-
-        .min(1, "Must be more than 1")
-        .required("Required"),
+      price: Yup.number().min(1, "Must be more than 1$").required("Required"),
+      quantity: Yup.number().min(1, "Must be more than 1").required("Required"),
       description: Yup.string()
         .matches(
           /^[a-zA-Z0-9 ]+$/,
@@ -95,8 +93,7 @@ function AddProduct() {
           <Form.Control
             id="description"
             name="description"
-            type="url"
-            placeholder="Enter your Blog URL"
+            placeholder="Enter Product Description"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.description}
@@ -116,4 +113,5 @@ function AddProduct() {
   );
 }
 
+ReactDOM.render(<AddProduct />, document.getElementById("root"));
 export default AddProduct;
