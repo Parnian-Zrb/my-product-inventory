@@ -10,10 +10,12 @@
 // import "react-app-polyfill/ie11";
 import * as ReactDOM from "react-dom";
 import { Formik, Field, Form, FormikHelpers } from "formik";
+import { TextareaAutosize } from "@mui/material";
 
 interface Values {
   productName: string;
   price: string;
+  description: string;
 }
 
 const App = () => {
@@ -24,6 +26,7 @@ const App = () => {
         initialValues={{
           productName: "",
           price: "",
+          description: "",
         }}
         onSubmit={(
           values: Values,
@@ -46,13 +49,13 @@ const App = () => {
           <label htmlFor="price">Price</label>
           <Field id="price" name="price" placeholder="Price" />
 
-          {/* <label htmlFor="email">Email</label>
+          <label htmlFor="description">Description</label>
           <Field
-            id="email"
-            name="email"
-            placeholder="john@acme.com"
-            type="email"
-          /> */}
+            id="description"
+            name="description"
+            placeholder="Prduct Description"
+            as={TextareaAutosize}
+          />
 
           <button type="submit">Add Product</button>
         </Form>
