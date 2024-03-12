@@ -2,6 +2,7 @@
 import * as ReactDOM from "react-dom";
 import { Formik, Field, Form, FormikHelpers } from "formik";
 import * as Yup from "yup";
+import "./AddProduct.css";
 
 interface Values {
   title: string;
@@ -13,7 +14,7 @@ interface Values {
 
 const AddProduct = () => {
   return (
-    <div className="signup-form">
+    <div className="container">
       <h1>Add Your Product Here</h1>
       <Formik
         initialValues={{
