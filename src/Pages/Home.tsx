@@ -1,22 +1,52 @@
 import ProductCard from "../components/ProductCard";
-import products from "../data/products.json";
+import { useState, useEffect } from "react";
+import { getAlldata } from "../api/productApi";
+import { ProductType } from "../types/products";
+// import products from "../data/products.json";
 import "./Home.css";
 
 const Home = () => {
-  const productsArray = products.products.data.items;
+  //   const productsArray = products.products.data.items;
+  const [products, setProducts] = useState<ProductType[]>([]);
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await getAlldata();
+
+        setProducts(response.data);
+      } catch (error) {
+        console.log("Error:", error);
+      }
+    };
+    fetchProducts();
+  }, []);
   return (
-    <div className="productContainer">
-      {productsArray.map((product) => (
+    <>
+      {products.map((product) => (
         <ProductCard
           image={product.image}
-          name={product.name}
-          description={product.description}
+          title={product.title}
           price={product.price}
-          rating={4.5}
+          description={product.description}
+          rating={product.rating}
+          category={product.category}
         />
       ))}
-    </div>
+    </>
   );
 };
+//     <div className="productContainer">
+//       {productsArray.map((product) => (
+//         <ProductCard
+//           image={product.image}
+//           name={product.name}
+//           description={product.description}
+//           price={product.price}
+//           rating={4.5}
+//         />
+//       ))}
+//     </div>
+//   );
+// };
 
 export default Home;
