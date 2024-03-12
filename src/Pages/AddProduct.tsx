@@ -1,7 +1,6 @@
 import { Form, Container, Button } from "react-bootstrap";
-import { Formik, useFormik } from "formik";
+import { useFormik } from "formik";
 import * as Yup from "yup";
-import ReactDOM from "react-dom";
 
 // export default AddProduct;
 function AddProduct() {
@@ -13,25 +12,15 @@ function AddProduct() {
       price: "",
     },
     validationSchema: Yup.object({
-      name: Yup.string()
-        .matches(
-          /^[a-zA-Z0-9 ]+$/,
-          "Name must be letters, dashes, numbers, or spaces"
-        )
-        .required("Required"),
+      name: Yup.string().required("Required"),
       price: Yup.number().min(1, "Must be more than 1$").required("Required"),
       quantity: Yup.number().min(1, "Must be more than 1").required("Required"),
-      description: Yup.string()
-        .matches(
-          /^[a-zA-Z0-9 ]+$/,
-          "Description must be letters, dashes, numbers, or spaces"
-        )
-        .required("Required"),
+      description: Yup.string().required("Required"),
     }),
-    onSubmit: (values) => {
+    onSubmit: (initialValues) => {
       // Here, you handle what you want to do with the form data when the form is submitted.
       // For instance, sending the data to a server.
-      console.log(values);
+      console.log(initialValues);
     },
   });
 
@@ -113,5 +102,4 @@ function AddProduct() {
   );
 }
 
-ReactDOM.render(<AddProduct />, document.getElementById("root"));
 export default AddProduct;
