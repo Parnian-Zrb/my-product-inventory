@@ -7,6 +7,7 @@ import "./Home.css";
 
 const Home = () => {
   //   const productsArray = products.products.data.items;
+
   const [products, setProducts] = useState<ProductType[]>([]);
   useEffect(() => {
     const fetchProducts = async () => {
@@ -21,7 +22,7 @@ const Home = () => {
     fetchProducts();
   }, []);
   return (
-    <>
+    <div className="productContainer">
       {products.map((product) => (
         <ProductCard
           image={product.image}
@@ -32,21 +33,8 @@ const Home = () => {
           category={product.category}
         />
       ))}
-    </>
+    </div>
   );
 };
-//     <div className="productContainer">
-//       {productsArray.map((product) => (
-//         <ProductCard
-//           image={product.image}
-//           name={product.name}
-//           description={product.description}
-//           price={product.price}
-//           rating={4.5}
-//         />
-//       ))}
-//     </div>
-//   );
-// };
 
 export default Home;
