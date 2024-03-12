@@ -12,7 +12,7 @@ interface ProductCardProps {
   description: string;
   price: number;
   category: string;
-  rating?: RatingType;
+  rating: RatingType;
 }
 export default function ProductCard({
   image,
