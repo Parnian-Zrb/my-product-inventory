@@ -1,7 +1,6 @@
 // import "react-app-polyfill/ie11";
 import * as ReactDOM from "react-dom";
 import { Formik, Field, Form, FormikHelpers } from "formik";
-import { RatingType } from "../types/products";
 
 interface Values {
   title: string;
