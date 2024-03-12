@@ -33,7 +33,7 @@ export default function ProductCard({
           {description}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {price}
+          Price: {price}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Category: {category}
