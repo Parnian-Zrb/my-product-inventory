@@ -1,6 +1,7 @@
 // import "react-app-polyfill/ie11";
 import * as ReactDOM from "react-dom";
 import { Formik, Field, Form, FormikHelpers } from "formik";
+import * as Yup from "yup";
 
 interface Values {
   title: string;
