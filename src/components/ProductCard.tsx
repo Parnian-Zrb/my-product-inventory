@@ -24,7 +24,7 @@ export default function ProductCard({
 }: ProductCardProps) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia sx={{ height: 140 }} image={image} title={title} />
+      <CardMedia sx={{ height: 500 }} image={image} title={title} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}
@@ -33,7 +33,7 @@ export default function ProductCard({
           {description}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Price: {price}
+          Price: {price} $
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Category: {category}
