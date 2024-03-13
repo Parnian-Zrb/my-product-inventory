@@ -3,7 +3,6 @@ import * as Yup from "yup";
 import { useFormik } from "formik";
 import { Form, Container, Button } from "react-bootstrap";
 import { createData } from "../api/productApi";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function AddProduct() {
   const formik = useFormik({
