@@ -12,8 +12,9 @@ interface dataType{
     
     title:string;
     description: string;
-    price:number;
-    rating: number;
+    price:string;
+    category: string,
+    rating: string,
 
     
 }
