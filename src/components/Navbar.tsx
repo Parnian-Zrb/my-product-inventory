@@ -18,11 +18,9 @@ const Navbar = () => {
         <li>
           <Link to="/AddProduct">Add Product</Link>
         </li>
+
         <li>
-          <Link to="/ProductDetails">Product Details</Link>
-        </li>
-        <li>
-          <Link to="/Favorits">Favorites</Link>
+          <Link to="/Favorites">Favorites</Link>
         </li>
       </ul>
     </nav>
