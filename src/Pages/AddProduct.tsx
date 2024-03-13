@@ -46,6 +46,7 @@ function AddProduct() {
 
       <Form method="post" action="#" onSubmit={formik.handleSubmit}>
         <Form.Group>
+          <label htmlFor="title">Title</label>
           <Form.Control
             id="title"
             name="title"
@@ -60,6 +61,7 @@ function AddProduct() {
           ) : null}
         </Form.Group>
         <Form.Group>
+          <label htmlFor="description">Description</label>
           <Form.Control
             id="description"
             name="description"
@@ -76,6 +78,7 @@ function AddProduct() {
           ) : null}
         </Form.Group>
         <Form.Group>
+          <label htmlFor="price">Price: $</label>
           <Form.Control
             id="price"
             name="price"
@@ -90,6 +93,7 @@ function AddProduct() {
           ) : null}
         </Form.Group>
         <Form.Group>
+          <label htmlFor="category">Category:</label>
           <Form.Control
             id="category"
             name="category"
@@ -106,6 +110,7 @@ function AddProduct() {
           ) : null}
         </Form.Group>
         <Form.Group>
+          <label htmlFor="rating">Rating:</label>
           <Form.Control
             id="rating"
             name="rating"
