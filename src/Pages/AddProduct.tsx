@@ -1,8 +1,7 @@
 import * as Yup from "yup";
-// import "./AddProduct.css";
+import "./AddProduct.css";
 import { useFormik } from "formik";
 import { Form, Container, Button } from "react-bootstrap";
-import { createData } from "../api/productApi";
 
 function AddProduct() {
   const formik = useFormik({
@@ -25,15 +24,8 @@ function AddProduct() {
         .min(0, "Too low!")
         .max(5, "Too high!"),
     }),
-    onSubmit: async (values, { resetForm }) => {
-      try {
-        const response = await createData(values);
-        console.log("Submitted Successfully", response);
-      } catch (error) {
-        console.error("Failed", error);
-      } finally {
-        resetForm({});
-      }
+    onSubmit: (values) => {
+      console.log(values);
     },
   });
 
