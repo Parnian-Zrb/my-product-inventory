@@ -1,7 +1,7 @@
 export interface ProductType{
-    [x: string]: string;
-    id?: number;
-    name: string;
+    
+    id: number;
+    title:string;
     price: number;
     description: string;
     category: string;
