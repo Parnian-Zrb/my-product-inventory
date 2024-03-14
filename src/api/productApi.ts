@@ -25,7 +25,7 @@ export const createProduct = (productData: ProductType) =>
 
 //get a single product
 export  const getProductById = (id :string)=>
-   axios.get('{URL}, ${id}');
+   axios.get(`${URL}, ${id}`);
 
 
 //update  an existing product
