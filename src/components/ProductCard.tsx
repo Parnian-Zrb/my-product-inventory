@@ -4,24 +4,26 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { RatingType } from "../types/products";
+import { ProductType } from "../types/products";
+import { Link } from "react-router-dom";
 
-interface ProductCardProps {
-  image: string;
-  title: string;
-  description: string;
-  price: number;
-  category: string;
-  rating: RatingType;
-}
+// interface ProductCardProps {
+//   image: string;
+//   title: string;
+//   description: string;
+//   price: number;
+//   category: string;
+//   rating: RatingType;
+// }
 export default function ProductCard({
+  id,
   image,
   title,
   description,
   category,
   price,
   rating,
-}: ProductCardProps) {
+}: ProductType) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia sx={{ height: 400 }} image={image} title={title} />
@@ -43,8 +45,9 @@ export default function ProductCard({
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Link to={`product/${id}`}>
+          <Button size="small">More Details</Button>
+        </Link>
       </CardActions>
     </Card>
   );
