@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { ProductType } from "../types/products";
 
-import { useParams } from "react-router-dom";
-import { getProductById } from "../api/productApi";
+import { useNavigate, useParams } from "react-router-dom";
+import { deleteProduct, getProductById } from "../api/productApi";
 
 const ProductDetails = () => {
   const { id = "" } = useParams();
-  console.log("This is the id", id);
+  const navigate = useNavigate();
   const [product, setProduct] = useState<ProductType>();
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -25,6 +25,19 @@ const ProductDetails = () => {
     fetchProduct();
   }, [id]);
 
+  const handleDelete = async () => {
+    try {
+      setIsLoading(true);
+
+      const response = await deleteProduct(id);
+      console.log("handleDelete:", response);
+      navigate("/");
+    } catch (error) {
+      console.error("Error deleting product:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
   return (
     <>
       {product ? (
@@ -32,7 +45,10 @@ const ProductDetails = () => {
           <h1>{product.title}</h1>
           <p>{product.description}</p>
           <button> Update Product</button>
-          <button> Delete Product</button>
+          <button onClick={handleDelete}>
+            {/* Delete Product */}
+            {isLoading ? <p>Deleting...</p> : <p>Delete Product</p>}
+          </button>
         </>
       ) : (
         <p>Loading product details...</p>
