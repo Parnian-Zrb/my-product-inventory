@@ -20,13 +20,6 @@ const ProductDetails = () => {
       } finally {
         setIsLoading(false);
       }
-      //   const  response = await getProductById(id);
-      //   setProduct(response.data);
-      // } catch (error) {
-      //     console.log("Error: ", error);
-      // }finally{
-      //   setIsLoading(false)
-      // }
     };
     fetchProduct();
   }, [id]);
