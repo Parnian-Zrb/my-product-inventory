@@ -4,6 +4,11 @@ import { useFormik } from "formik";
 import { Form, Container, Button } from "react-bootstrap";
 import { createProduct } from "../api/productApi";
 
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+
 function AddProduct() {
   const formik = useFormik({
     initialValues: {
