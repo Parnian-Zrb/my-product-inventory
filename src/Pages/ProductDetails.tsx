@@ -6,6 +6,7 @@ import { getProductById } from "../api/productApi";
 
 const ProductDetails = () => {
   const { id = "" } = useParams();
+  console.log("This is the id", id);
   const [product, setProduct] = useState<ProductType>();
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
