@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ProductType } from "../types/products";
-
+import "./ProductDetails.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { deleteProduct, getProductById } from "../api/productApi";
 
@@ -42,13 +42,18 @@ const ProductDetails = () => {
     <>
       {product ? (
         <>
+          <div>
+            <img src={product.image} alt={product.title} />
+          </div>
           <h1>{product.title}</h1>
-          <p>{product.description}</p>
-          <button> Update Product</button>
-          <button onClick={handleDelete}>
-            {/* Delete Product */}
-            {isLoading ? <p>Deleting...</p> : <p>Delete Product</p>}
-          </button>
+          <p className="description ">{product.description}</p>
+          <div className="container">
+            <button> Update Product</button>
+            <button onClick={handleDelete}>
+              {/* Delete Product */}
+              {isLoading ? <p>Deleting...</p> : <p>Delete Product</p>}
+            </button>
+          </div>
         </>
       ) : (
         <p>Loading product details...</p>
