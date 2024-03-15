@@ -56,7 +56,7 @@ function AddProduct() {
             id="title"
             name="title"
             type="text"
-            placeholder="Enter your title"
+            placeholder="Enter product title"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.title}
@@ -88,7 +88,7 @@ function AddProduct() {
             id="price"
             name="price"
             type="text"
-            placeholder="Enter your price"
+            placeholder="Enter product price"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.price}
@@ -103,7 +103,7 @@ function AddProduct() {
             id="category"
             name="category"
             type="text"
-            placeholder="Enter your category"
+            placeholder="Enter product category"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.category}
@@ -120,7 +120,7 @@ function AddProduct() {
             id="rating"
             name="rating"
             type="text"
-            placeholder="Enter your rating"
+            placeholder="Enter product rating"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.rating}

@@ -18,14 +18,7 @@ h1 {
   position: relative;
 }
 
-.container {
-  display: flex;
-  float: left;
-  margin-top: auto;
-  position: relative;
-}
-
-.description {
+.description1 {
   display: flex;
   font-size: 16px;
   color: rgb(16, 1, 1);

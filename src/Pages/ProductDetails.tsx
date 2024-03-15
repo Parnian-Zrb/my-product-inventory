@@ -46,9 +46,10 @@ const ProductDetails = () => {
             <img src={product.image} alt={product.title} />
           </div>
           <h1>{product.title}</h1>
-          <p className="description ">{product.description}</p>
-          <div className="container">
+          <p className="description1 ">{product.description}</p>
+          <div className="B">
             <button> Update Product</button>
+            <br />
             <button onClick={handleDelete}>
               {/* Delete Product */}
               {isLoading ? <p>Deleting...</p> : <p>Delete Product</p>}
