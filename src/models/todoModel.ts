@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
 import { string } from "yup";
 
-const todoSchema = new Schema({
+const productSchema = new Schema({
   title: {
     type: String,
     required: [true, "Title is required!"],
@@ -27,4 +27,4 @@ const todoSchema = new Schema({
   },
 });
 
-export default model("Todo", todoSchema);
+export default model("Product", productSchema);
