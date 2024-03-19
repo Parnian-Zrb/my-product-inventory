@@ -14,8 +14,8 @@ const Home = () => {
       try {
         const response = await getAlldata();
 
-        setProducts(response.data);
-        console.log(response.data);
+        setProducts(response.data.data);
+        console.log(response.data.data);
       } catch (error) {
         console.log("Error:", error);
       }
