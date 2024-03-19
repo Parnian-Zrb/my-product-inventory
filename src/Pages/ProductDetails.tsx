@@ -15,7 +15,7 @@ const ProductDetails = () => {
       try {
         setIsLoading(true);
         const responseData = await getProductById(id);
-        setProduct(responseData.data);
+        setProduct(responseData.data.data);
       } catch (error) {
         console.log("Error: ", error);
       } finally {

@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 //   rating: RatingType;
 // }
 export default function ProductCard({
-  id,
+  _id,
   image,
   title,
   description,
@@ -45,7 +45,7 @@ export default function ProductCard({
         </Typography>
       </CardContent>
       <CardActions>
-        <Link to={`product/${id}`}>
+        <Link to={`product/${_id}`}>
           <Button size="small">More Details</Button>
         </Link>
       </CardActions>
