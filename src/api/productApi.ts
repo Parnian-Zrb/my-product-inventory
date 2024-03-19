@@ -21,11 +21,11 @@ export const createProduct = (productData: ProductType) =>
   axios.post(URL, productData);
 
 //get a single product
-export const getProductById = (id: string) => axios.get(`${URL}/${id}`);
+export const getProductById = (_id: string) => axios.get(`${URL}/${_id}`);
 
 //update  an existing product
-export const updateProduct = (id: string, productData: ProductType) =>
-  axios.patch(`${URL}/${id}`, productData);
+export const updateProduct = (_id: string, productData: ProductType) =>
+  axios.patch(`${URL}/${_id}`, productData);
 
 //delete  a product
 export const deleteProduct = (id: string) => axios.delete(`${URL}/${id}`);
