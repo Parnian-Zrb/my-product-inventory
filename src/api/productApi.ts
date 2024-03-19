@@ -2,7 +2,8 @@
 //GET/POST/PATCH,PUT/DELETE
 
 import axios from "axios";
-const URL = "https://fakestoreapi.com/products";
+const URL = "http://localhost:8000/products";
+//  "https://fakestoreapi.com/products";
 
 //fetch all the  products
 export const getAlldata = () => axios.get(URL);
