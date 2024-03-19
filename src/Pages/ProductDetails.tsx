@@ -5,7 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { deleteProduct, getProductById } from "../api/productApi";
 
 const ProductDetails = () => {
-  const { _id = "" } = useParams();
+  const { id = "" } = useParams();
   const navigate = useNavigate();
   const [product, setProduct] = useState<ProductType>();
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -14,7 +14,7 @@ const ProductDetails = () => {
     const fetchProduct = async () => {
       try {
         setIsLoading(true);
-        const responseData = await getProductById(_id);
+        const responseData = await getProductById(id);
         setProduct(responseData.data.data);
       } catch (error) {
         console.log("Error: ", error);
@@ -23,13 +23,13 @@ const ProductDetails = () => {
       }
     };
     fetchProduct();
-  }, [_id]);
+  }, [id]);
 
   const handleDelete = async () => {
     try {
       setIsLoading(true);
 
-      const response = await deleteProduct(_id);
+      const response = await deleteProduct(id);
       console.log("handleDelete:", response);
       navigate("/");
     } catch (error) {
