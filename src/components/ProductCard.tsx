@@ -7,14 +7,6 @@ import Typography from "@mui/material/Typography";
 import { ProductType } from "../types/products";
 import { Link } from "react-router-dom";
 
-// interface ProductCardProps {
-//   image: string;
-//   title: string;
-//   description: string;
-//   price: number;
-//   category: string;
-//   rating: RatingType;
-// }
 export default function ProductCard({
   _id,
   image,
