@@ -41,7 +41,7 @@ export default function ProductCard({
           Category: {category}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Ratings: {rating.count} {rating.rate}
+          Ratings: {rating}
         </Typography>
       </CardContent>
       <CardActions>
