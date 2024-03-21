@@ -17,6 +17,7 @@ function AddProduct() {
       price: "",
       category: "",
       rating: "",
+      image: "",
     },
     validationSchema: Yup.object({
       title: Yup.string().required("Title is required"),
@@ -129,6 +130,21 @@ function AddProduct() {
             <Form.Text className="text-muted">{formik.errors.rating}</Form.Text>
           ) : null}
         </Form.Group>
+        {/* <Form.Group>
+          <label htmlFor="Image">Image:</label>
+          <Form.Control
+            id="image"
+            name="image"
+            type="file"
+            accept="image/*"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.image}
+          />
+          {formik.touched.rating && formik.errors.image ? (
+            <Form.Text className="text-muted">{formik.errors.image}</Form.Text>
+          ) : null}
+        </Form.Group> */}
 
         <Button variant="primary" type="submit">
           ADD
