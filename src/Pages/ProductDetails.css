@@ -1,7 +1,7 @@
 img {
   display: flex;
   align-items: end;
-  max-width: 20%;
+  max-width: 40%;
   float: left;
   border-radius: 50px;
   margin: 5%;
@@ -14,7 +14,7 @@ h1 {
   font-size: 30px;
   color: rgb(16, 1, 1);
   font-family: " Arial";
-  margin: 10% 5% 0 0;
+  margin: 5% 5% 0 0;
   position: relative;
 }
 
