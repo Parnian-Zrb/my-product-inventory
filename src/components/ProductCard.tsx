@@ -18,7 +18,17 @@ export default function ProductCard({
 }: ProductType) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia sx={{ height: 400 }} image={image} title={title} />
+      <CardMedia
+        sx={{
+          height: 280,
+          width: 280,
+          display: "flex",
+          paddingLeft: "5rem",
+          justifyItems: "center",
+        }}
+        image={image}
+        title={title}
+      />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}
